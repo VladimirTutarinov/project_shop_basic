@@ -13,6 +13,21 @@ public class Product {
     private double price;
     private boolean active;
 
+    public Product(Long id, String title, double price, boolean active) {
+        this.id = id;
+        this.title = title;
+        this.price = price;
+        this.active = active;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
