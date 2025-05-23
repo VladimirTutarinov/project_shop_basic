@@ -27,6 +27,18 @@ public class Customer {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
     public Long getId() {
         return id;
     }
@@ -36,6 +48,10 @@ public class Customer {
         if (o == null || getClass() != o.getClass()) return false;
         Customer costumer = (Customer) o;
         return active == costumer.active && Objects.equals(id, costumer.id) && Objects.equals(name, costumer.name) && Objects.equals(cart, costumer.cart);
+    }
+
+    public List<Product> getCart() {
+        return cart;
     }
 
     @Override
