@@ -20,6 +20,22 @@ public class Product {
         this.active = active;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
