@@ -8,7 +8,7 @@ public class Customer {
     private Long id;
     private String name;
     private boolean active;
-    private List<Product> cart;
+    private final List<Product> cart =  new ArrayList<>();
 
     public void setId(Long id) {
         this.id = id;
@@ -18,9 +18,11 @@ public class Customer {
         this.id = id;
         this.name = name;
         this.active = active;
-        cart = new ArrayList<>();
 
+    }
 
+    public Customer(String name) {
+        this.name = name;
     }
 
     public void setName(String name) {

@@ -20,6 +20,11 @@ public class Product {
         this.active = active;
     }
 
+    public Product(String title, double price) {
+        this.title = title;
+        this.price = price;
+    }
+
     public String getTitle() {
         return title;
     }
